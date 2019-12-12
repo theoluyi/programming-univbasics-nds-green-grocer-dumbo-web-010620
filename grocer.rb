@@ -1,15 +1,36 @@
+require "pry"
+
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
+  item_index = 0
+    
+  while item_index < collection.length do 
+    if collection[item_index][:item] == name 
+      return collection[item_index]
+    end 
+    item_index += 1 
+  end
+  nil 
 end
 
 def consolidate_cart(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This returns a new Array that represents the cart. Don't merely
-  # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  pp cart 
+  cart 
+ 
+  concart = []
+  element_index = 0 
+ 
+  
+  #grocery_hash = cart[element_index]
+  #item_in_concart = find_item_by_name_in_collection(grocery_hash[:item], concart)
+ 
+  #puts item_in_concart
+ 
+  puts 10101010101
+  puts concart 
+  puts 10101010101
+  concart
 end
+
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
